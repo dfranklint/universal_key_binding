@@ -1,0 +1,44 @@
+#Store this file in /etc/udev/hwdb.d
+#This file is meant to run in conjuction with sxhkd or some other hotkey daemon.
+#After editing this file, you must run: sudo systemd-hwdb update && sudo udevadm trigger
+#To see the device and its keys' scancodes run: sudo evtest
+#The scancodes in this file are assigned linux event codes.
+#Linux event codes can be seen at https://elixir.bootlin.com/linux/latest/source/include/uapi/linux/input-event-codes.h
+evdev:name:*2.4G Composite Devic*:*
+# 2.4G Composite Devic
+# 1-9, 0, del
+    KEYBOARD_KEY_7001e=148
+    KEYBOARD_KEY_7001f=149
+    KEYBOARD_KEY_70020=202
+    KEYBOARD_KEY_70021=203
+    KEYBOARD_KEY_70022=184
+    KEYBOARD_KEY_70023=185
+    KEYBOARD_KEY_70024=186
+    KEYBOARD_KEY_70025=187
+    KEYBOARD_KEY_70026=188
+    KEYBOARD_KEY_70027=92
+    KEYBOARD_KEY_7002a=204
+# pg +, pg -
+    KEYBOARD_KEY_7004b=221
+    KEYBOARD_KEY_7004e=220
+# list button
+    KEYBOARD_KEY_70065=219
+# 2.4G Composite Devic Consumer Control
+# rewind, ffwd, prevsong, nextsong
+    KEYBOARD_KEY_c00b4=218
+    KEYBOARD_KEY_c00b3=216
+    KEYBOARD_KEY_c00b6=215
+    KEYBOARD_KEY_c00b5=15
+# search, play/pause, zoomin, zoomout
+    KEYBOARD_KEY_c0221=151
+    KEYBOARD_KEY_c00cd=57
+    KEYBOARD_KEY_c022d=145
+    KEYBOARD_KEY_c022e=140
+# media buttons right of numbers
+    KEYBOARD_KEY_c0183=90
+    KEYBOARD_KEY_c018a=123
+    KEYBOARD_KEY_c008a=122
+# home, back, mute
+    KEYBOARD_KEY_c0223=94
+    KEYBOARD_KEY_c0224=63
+    KEYBOARD_KEY_c00e2=150
